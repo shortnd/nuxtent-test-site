@@ -12,7 +12,8 @@ const createStore = () => {
     },
     actions: {
       async nuxtServerInit ({commit}, {app}) {
-        await app.$axios.$get('/site_info').then(res => commit('setSiteInfo', res))
+        let res = await app.$axios.$get('/site_info')
+        commit('setSiteInfo', res)
       }
     }
   })
