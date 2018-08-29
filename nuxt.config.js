@@ -18,6 +18,7 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   modules: [
+    'nuxt-netlify-cms',
     'nuxtent',
   ],
   /*
