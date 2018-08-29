@@ -20,6 +20,9 @@ module.exports = {
   modules: [
     'nuxtent',
   ],
+  api: {
+    baseURL: ''
+  }
   /*
   ** Build configuration
   */
