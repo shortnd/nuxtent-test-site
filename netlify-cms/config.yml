@@ -8,10 +8,10 @@ media_folder: "static/uploads"
 
 collections:
   - name: "posts"
-  label: "Post"
-  folder: "content/posts"
-  slug: "{{slug}}"
-  create: true
-  fields:
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "body", name: "body", widget: "markdown"}
+    label: "Post"
+    folder: "content/posts"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "body", name: "body", widget: "markdown"}
