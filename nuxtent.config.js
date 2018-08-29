@@ -40,8 +40,6 @@ module.exports = {
     ]
   ],
   api: {
-    baseURL: process.env.NODE_ENV === 'production'
-      ? 'https://cocky-euler-b82099.netlify.com'
-      : 'http://localhost:3000'
+    baseURL: ''
   }
 }
