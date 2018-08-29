@@ -19,7 +19,6 @@
 <script>
 export default {
   data() {
-    site_info: this.$store.state.site_info
   },
   asyncData: async ({app}) => ({
       posts: await app.$content('/posts').getAll(),
