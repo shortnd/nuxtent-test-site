@@ -6,8 +6,7 @@
       <a :href="'https://'+header_info.facebook_link" target="_blank">facebook</a>
     </div>
     <nav>
-      <a href="/">Home</a>
-
+      <nuxt-link to="/">Home</nuxt-link>
       <ul>
         <li>
           <nuxt-link to="/posts">Posts</nuxt-link>

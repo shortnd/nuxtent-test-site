@@ -22,7 +22,6 @@ export default {
     site_info: this.$store.state.site_info
   },
   asyncData: async ({app}) => ({
-      site_info: await app.$content('/').get('/site_info'),
       posts: await app.$content('/posts').getAll(),
       projects: await app.$content('/projects').getAll()
   })
