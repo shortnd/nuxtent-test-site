@@ -16,6 +16,15 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "body", name: "body", widget: "markdown"}
+
+  - name: "projects"
+    label: "projects"
+    folder: "content/projects"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string" }
+      - {label: "body", name: body, widget: "markdown"}
   
   - name: "site_info"
     label: "Site Info"
