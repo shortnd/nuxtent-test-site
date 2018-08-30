@@ -24,7 +24,7 @@ collections:
         file: "content/site_info/header.yml"
         fields:
         - {label: 'Phone Number', name: 'phone_number', widget: string }
-        - {label: 'Email', name: 'email', widget: string}
+        - {label: 'Email', name: 'email_address', widget: string}
         - {label: 'Facebook Link', name: 'facebook_link', widget: 'string'}
       
       - label: "Footer Info"
