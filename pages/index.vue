@@ -13,11 +13,29 @@
         <nuxt-link :to="project.permalink">{{project.title}}</nuxt-link>
       </div>
     </div>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </section>
 </template>
 
 <script>
 export default {
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'}
+      ]
+    }
+  },
   data() {
   },
   asyncData: async ({app}) => ({
