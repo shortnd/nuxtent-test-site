@@ -16,6 +16,16 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "body", name: "body", widget: "markdown"}
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        fields:
+          - label: "Slides"
+            name: "slides"
+            widget: "object"
+            fields:
+            - {label: Img Alt, name: img_alt, widget: string}
+            - {label: Image, name: image, widget: image}
 
   - name: "projects"
     label: "projects"
