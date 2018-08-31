@@ -9,17 +9,17 @@
       <nuxt-link to="/">Home</nuxt-link>
       <ul>
         <li>
-          <nuxt-link to="/posts">Posts</nuxt-link>
+          <nuxt-link to="/posts" v-if="posts.length">Posts</nuxt-link>
           <!-- {{posts}} -->
-          <ul v-if="posts">
+          <ul>
             <li v-for="post in posts" :key="post.id">
               <nuxt-link :to="post.permalink">{{post.title}}</nuxt-link>
             </li>
           </ul>
         </li>
         <li>
-          <nuxt-link to="/projects">Projects</nuxt-link>
-          <ul v-if="projects">
+          <nuxt-link to="/projects" v-if="projects.length">Projects</nuxt-link>
+          <ul>
             <li v-for="project in projects" :key="project.id">
               <nuxt-link :to="project.permalink">{{project.title}}</nuxt-link>
             </li>
