@@ -1,14 +1,19 @@
 <template>
   <footer>
     <div class="container">
-      <a href="/admin">Login</a>
+      <span class="copyright">{{footer_info.copyright}}</span>
+      <a id="login" href="/admin">Login</a>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      footer_info: this.$store.state.site_info[1].body
+    }
+  }
 }
 </script>
 
@@ -18,5 +23,5 @@ export default {
   max-width:1200px;
   width:100%;
 }
-.container a{float:right}
+.container #login{float:right}
 </style>

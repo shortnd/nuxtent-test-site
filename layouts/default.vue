@@ -10,10 +10,18 @@
 import HeaderNavbar from '~/components/HeaderNavbar'
 import SiteFooter from '~/components/SiteFooter'
 export default {
+  data: function() {
+    return {
+      //
+    }
+  },
   components: {
     HeaderNavbar,
     SiteFooter
-  }
+  },
+  props: ['header_posts'],
+  asyncData: async ({app}) => ({
+  }),
 }
 </script>
 
