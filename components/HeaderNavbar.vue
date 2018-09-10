@@ -18,7 +18,7 @@
           </ul>
         </li>
         <li>
-          <nuxt-link to="/projects" v-if="projects.length">Projects</nuxt-link>
+          <nuxt-link to="/projects">Projects</nuxt-link>
           <ul>
             <li v-for="project in projects" :key="project.id">
               <nuxt-link :to="project.permalink">{{project.title}}</nuxt-link>
@@ -36,7 +36,7 @@ export default {
     return {
       header_info: this.$store.state.site_info[0].body,
       posts: this.$store.state.posts_pages,
-      projects: this.$store.state.pro_pages
+      projects: this.$store.state.pro_pages,
     }
   },
 }

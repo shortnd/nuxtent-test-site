@@ -15,9 +15,12 @@ export default {
       ]
     }
   },
+  data: {
+    // slides: this.post.galleryImages
+  },
   asyncData: async ({ app, route, payload}) => ({
       post: await app.$content('/posts').get(route.path) || payload
-  })
+  }),
 }
 </script>
 
