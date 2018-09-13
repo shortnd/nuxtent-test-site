@@ -1,5 +1,4 @@
-require('dotenv').config()
-
+const axios = require('axios')
 module.exports = {
   /*
   ** Headers of the page
@@ -24,9 +23,11 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: [
     'nuxtent',
-    '@nuxtjs/dotenv'
-    // '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    generate: true
+  }
   /*
   ** Build configuration
   */
