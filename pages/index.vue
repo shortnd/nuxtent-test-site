@@ -9,8 +9,13 @@
         <nuxt-link :to="post.permalink">{{post.title}}</nuxt-link>
       </div>
       <h3>Projects</h3>
-      <div v-for="project in projects" :key="project.id">
-        <nuxt-link :to="project.permalink">{{project.title}}</nuxt-link>
+      <div v-if="projects.length > 0">
+        <div v-for="project in projects" :key="project.id">
+          <nuxt-link :to="project.permalink">{{project.title}}</nuxt-link>
+        </div>
+      </div>
+      <div v-else>
+        <h4>There are no projects currently</h4>
       </div>
     </div>
     <script>

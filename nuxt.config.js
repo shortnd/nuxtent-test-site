@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   /*
   ** Headers of the page
@@ -22,6 +24,8 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: [
     'nuxtent',
+    '@nuxtjs/dotenv'
+    // '@nuxtjs/sitemap'
   ],
   /*
   ** Build configuration
